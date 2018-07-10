@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
 
     defaultConfig {
-        applicationId "com.skyfishjy.library"
-        minSdkVersion 11
-        targetSdkVersion 21
+//        applicationId "com.skyfishjy.library"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
         versionCode 2
         versionName "1.0.1"
     }
@@ -22,4 +22,4 @@ android {
 dependencies {
 }
 
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
